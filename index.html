@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>New Employees</h3>
+    <form id="employeeForm">
+        <div class="form-data">
+            <div class="input-group">
+                <label for="name">Enter Name</label>
+                <input type="text" class="form-group" id="name">
+            </div>
+            <div class="input-group">
+                <label for="profession">Enter Profession</label>
+                <input type="text" class="form-group" id="profession">
+            </div>
+            <div class="input-group">
+                <label for="age">Enter Age</label>
+                <input type="number" class="form-group" id="age">
+            </div>
+        </div>
+        <button type="submit">Add User</button>
+        <p id="errorMessage" class="error"></p>
+        <p id="successMessage" class="success"></p>
+    </form>
+    <h3>Added Employees</h3>
+    <p id="employeeCount">You have 0 Employees.</p>
+    <div id="employeeList"></div>
+    <script src="script.js"></script>
+</body>
+</html>
